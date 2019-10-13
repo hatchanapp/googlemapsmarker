@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1WP-0r-MhQ">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="deC-gW-rJK">
+            <objects>
+                <navigationController storyboardIdentifier="main_nav" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1WP-0r-MhQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="D1g-tw-2BF">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="AppTheme"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Ep-cE-Max" kind="relationship" relationship="rootViewController" id="1tc-lK-afx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBh-P1-L30" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2544" y="30.584707646176916"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="j2Z-OP-t2z">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="0Ep-cE-Max" customClass="HomeViewController" customModule="Maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hVX-2U-Jfl" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xvi-ge-KYD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JkD-zT-Aaj"/>
+                    <connections>
+                        <outlet property="mapView" destination="hVX-2U-Jfl" id="E0F-tM-LNz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6M-Yw-9lR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1847" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AppTheme">
+            <color red="0.82352941176470584" green="0.68235294117647061" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
