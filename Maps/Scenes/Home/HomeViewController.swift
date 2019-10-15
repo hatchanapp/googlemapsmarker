@@ -20,11 +20,11 @@ class HomeViewController: UIViewController {
     
     func addMarker() {
         
-        let position = CLLocationCoordinate2D(latitude: -33.8469759, longitude: 150.3715249)
-        let marker = PlaceMarker(withPlaceName: "Sydney, aUSTRALIA", position: position)
+        let position = CLLocationCoordinate2D(latitude: 40.689477, longitude: -74.044779)
+        let marker = PlaceMarker(withPlaceName: "Statue of Liberty", position: position)
         marker.map = mapView
         
-        mapView.animate(to: GMSCameraPosition(target: position, zoom: 17.0))
+        mapView.animate(to: GMSCameraPosition(target: position, zoom: 18.0))
     }
 
 }

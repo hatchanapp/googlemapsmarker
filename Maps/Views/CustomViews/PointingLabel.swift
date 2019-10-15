@@ -10,7 +10,7 @@ import UIKit
 
 class PointingLabel : UIView {
     
-    private let popupColor = UIColor(white: 0.0, alpha: 0.16)
+    private let popupColor = UIColor.white
     private let drawingCornerRadius: CGFloat = 6.0
     private let bubbleHeightRatio: CGFloat = 0.83
     
