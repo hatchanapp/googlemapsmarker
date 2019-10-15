@@ -9,4 +9,16 @@
 import UIKit
 import GoogleMaps
 
-class PlaceMarker: GMSMarker {}
+class PlaceMarker: GMSMarker {
+    
+    var placeName: String
+    
+    init(withPlaceName placeName: String, position pos: CLLocationCoordinate2D) {
+        self.placeName = placeName
+        super.init()
+        
+        let label = PointingLabel(withText: placeName, font: UIFont.liberationSans(size: 18.0))
+        self.iconView = label
+        self.position = pos
+    }
+}

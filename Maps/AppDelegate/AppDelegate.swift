@@ -16,11 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        if SDKKeys.GoogleMapAPIKey.isEmpty {
-            fatalError("API key missing in Constants.swift file.")
-        }
-        
         GMSServices.provideAPIKey(SDKKeys.GoogleMapAPIKey)
         return true
     }

@@ -8,5 +8,5 @@
 import Foundation
 
 struct SDKKeys {
-    static let GoogleMapAPIKey = ""
+    static let GoogleMapAPIKey = "AIzaSyDdKqdkKpqbulgL6pLA4I3gR9h9Fb92KL4"
 }
